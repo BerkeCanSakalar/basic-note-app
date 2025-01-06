@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Tutma Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Not Tutma Uygulaması</h1>
+        
+        <!-- Arama ve Filtreleme -->
+        <input type="text" id="searchInput" placeholder="Notları ara..." class="search-input">
+
+        <!-- Not Ekleme Formu -->
+        <form id="noteForm">
+            <input type="text" id="noteInput" placeholder="Yeni not ekleyin..." required>
+            <select id="categorySelect">
+                <option value="genel">Genel</option>
+                <option value="iş">İş</option>
+                <option value="kişisel">Kişisel</option>
+                <option value="öemli">Önemli</option>
+            </select>
+            <select id="prioritySelect">
+                <option value="yüksek">Yüksek</option>
+                <option value="orta">Orta</option>
+                <option value="düşük">Düşük</option>
+            </select>
+            <button type="submit">Ekle</button>
+        </form>
+        
+        <!-- Not Listesi -->
+        <ul id="noteList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
